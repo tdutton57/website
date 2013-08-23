@@ -1,0 +1,21 @@
+<div id="theiahtweith" style="float:left;">
+<center><h1>Listing posts</h1></center>
+	<hr>
+	<br>
+	<br>
+
+<table>
+  
+
+<% @posts.each do |post| %>
+  <tr><p><u><h2><%= post.title %></h2></u></p></tr>
+  <tr><p><%= post.content %> </p></tr>
+  <tr>by:<i> <%= post.name %></i>&nbsp;&nbsp;&nbsp;<%= link_to 'Edit', edit_post_path(post) %></tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Post', new_post_path %>
+</center>
+</div>

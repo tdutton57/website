@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tiffani's Website</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="Tiffani Dutton's web site">  
+    <meta name="author" content="">
+  <link href="../../assets/stylesheets/bootstrap.css" rel="stylesheet">  
+  <link href="../../assets/stylesheets/example-fluid-layout.css" rel="stylesheet">
+   <div class="navbar navbar-fixed-top"> 
+    <div class="navbar-inner">  
+      <div class="container-fluid">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">  
+            <span class="icon-bar"></span>  
+            <span class="icon-bar"></span>  
+            <span class="icon-bar"></span>  
+        </a> 
+        <div class="container">  
+          <div class="row">  
+            <div class="span6">  
+              <ul class="nav pull-left">   
+              <li><%=link_to "Home", root_path%></li>  
+              <li><%= link_to "About", static_pages_about_path %></li>
+              <li><%= link_to "Resume", resume_path %></li>
+              <li><%= link_to "School", static_pages_school_path %></li>
+              <!---<li><%= link_to "Helpful Links", static_pages_links_path%></li>---->
+              <li><%= link_to "My Blog",posts_path%></li>
+              </ul>  
+              <ul class="nav pull-left">
+                <li><a href="https://www.facebook.com/tiffani.dutton?ref=tn_tnmn" target="_blank">
+                  <%= image_tag("facebook.png", :alt => "facebook") %></a></li>  
+              <li><a href="https://twitter.com/ninjapanda57" target="_blank">
+              <%= image_tag("twitter.png", :alt => "twitter") %>
+              </a></li>
+
+              <li><a href="https://plus.google.com/u/1/103506770754868070544" target="_blank">
+              <%= image_tag("gplus.png", :alt => "gplus")%>
+              </a></li>
+
+              <li><a href="http://www.linkedin.com/profile/view?id=111580522&trk=hb_tab_pro_top" target="_blank">
+              <%= image_tag("linkedin.png", :alt => "linkedin") %>
+              </a></li> 
+            </ul>
+            </div>  
+          </div>  
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</head>
+<body>
+
+<%= yield %>
+</body>
+
+<footer> 
+              
+  </footer> 
+<script src="../../assets/js/jquery.js"></script>  
+<script src="../../assets/js/bootstrap-transition.js"></script>  
+<script src="../../assets/js/bootstrap-alert.js"></script>  
+<script src="../../assets/js/bootstrap-modal.js"></script>  
+<script src="../../assets/js/bootstrap-dropdown.js"></script>  
+<script src="../../assets/js/bootstrap-scrollspy.js"></script>  
+<script src="../../assets/js/bootstrap-tab.js"></script>  
+<script src="../../assets/js/bootstrap-tooltip.js"></script>  
+<script src="../../assets/js/bootstrap-popover.js"></script>  
+<script src="../../assets/js/bootstrap-button.js"></script>  
+<script src="../../assets/js/bootstrap-collapse.js"></script>  
+<script src="../../assets/js/bootstrap-carousel.js"></script>  
+<script src="../../assets/js/bootstrap-typeahead.js"></script>  
+</body>
+</html>
